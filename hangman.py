@@ -1,7 +1,9 @@
 import random
+""" words module """
 
-words = ["love", "marangi", "watermelon", "pineapple", "mango", "cashewnut", "groundnut"]
+from word import words
 
+""" hangman art """
 hangman_mockup = {
     0: (
         "   ",
@@ -44,11 +46,14 @@ hangman_mockup = {
 def display_man(wrong_guesses):
     for man in hangman_mockup[wrong_guesses]:
         print(man)
+
+
 def display_hint(hint):
     print(" ".join(hint))
 
+
 def display_answer(answer):
-    print("".join(answer))
+    return "".join(answer)
 
 def main():
     answer = random.choice(words)
@@ -83,8 +88,8 @@ def main():
             is_running = False
         elif wrong_guesses >= len(hangman_mockup) - 1:
             display_man(wrong_guesses)
-            display_hint(hint)
             print("YOU LOSE!😢😢")
+            print("the word was:", display_answer(answer))
             is_running = False
 
 if __name__ == "__main__":
