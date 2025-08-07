@@ -10,6 +10,7 @@ This is a simple program that mocks a hangman game logic using python logic.
 ## Getting started
 
 ### Requirements
+- install python interpreter on you desktop
 - Basic knowledge to run python programs on the terminal
 
 ### Installation
