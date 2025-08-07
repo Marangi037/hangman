@@ -1,9 +1,9 @@
 # HANGMAN GAME
-This is a simple program that mocks a hangman game logic using python logic.
+This is a simple python program that mocks a hangman game logic where a user is required to guess the letters of a word to make a full word within a set number of trials.
 
 
 ## Features
-    when the program starts, a user gets an input prompt to guess a letter where the program:
+    When the program starts, a user gets an input prompt to guess a letter where the program:
     1. validates if the input is valid
     2. checks if the letter is the word
     3. return a response and a hangman art if user wins or loses
